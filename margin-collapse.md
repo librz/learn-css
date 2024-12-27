@@ -1,4 +1,4 @@
-# test of comprehension
+## test of comprehension
 
 1. true or false: if two boxes are adjacent but not siblings(children of same container), their margins won't collapse
 2. true or false: margin collapse can happen either in horizontal or vertical direction
@@ -9,13 +9,13 @@ if u can confidently answer the above questions -> you are good -> skip the rest
 
 if not, read on.
 
-# doc
+## doc
 
 [Mastering Margin Collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing)
 
-# answers
+## answers
 
-## True or False: if two boxes are adjacent but not siblings(children of same container), their margins won't collapse
+### True or False: if two boxes are adjacent but not siblings(children of same container), their margins won't collapse
 
 False. They don't have to be siblings. e.g.
 
@@ -28,7 +28,7 @@ False. They don't have to be siblings. e.g.
 </div>
 ```
 
-## True or False: margin collapse can happen either in horizontal or vertical direction
+### True or False: margin collapse can happen either in horizontal or vertical direction
 
 False. margin collapse *only* happens in *vertical* direction. e.g.
 
@@ -39,7 +39,7 @@ False. margin collapse *only* happens in *vertical* direction. e.g.
 </div>
 ```
 
-## what are the types of margin collapse?
+### what are the types of margin collapse?
 
 3 types:
 
@@ -79,7 +79,7 @@ If a block has no content, its top and bottom margins will collapse. e.g.
 
 In this example, the whitespace between box 1 and box 2 is 100px instead of 150px
 
-## what are the ways to prevent margin collapse?
+### what are the ways to prevent margin collapse?
 
 #### *something with height* in between
 
