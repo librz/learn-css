@@ -39,17 +39,17 @@ False. margin collapse *only* happens in *vertical* direction. e.g.
 </div>
 ```
 
-## what are the types of margin collapse?
+#### what are the types of margin collapse?
 
 3 types:
 
-#### Adjacent elements
+1. **Adjacent elements**
 
 When two block-level elements are adjacent, their vertical margins collapse into a single margin. The size of the collapsed margin is the largest of the two margins.
 
 This is the most common scenario.
 
-#### Nested elements
+2. **Nested elements**
 
 If a parent and its first or last child have vertical margins, these margins can also collapse. e.g.
 
@@ -65,7 +65,7 @@ If a parent and its first or last child have vertical margins, these margins can
 
 In this example, the whitespace between box 1 and box 2 is 100px instead of 150px
 
-#### Empty blocks
+3. **Empty blocks**
 
 If a block has no content, its top and bottom margins will collapse. e.g.
 
@@ -81,7 +81,7 @@ In this example, the whitespace between box 1 and box 2 is 100px instead of 150p
 
 #### what are the ways to prevent margin collapse?
 
-1. *something with height* in between
+1. **something with height in between*
 
 it could be a border:
 
@@ -117,7 +117,7 @@ or inline content:
 </div>
 ```
 
-2. BFC(Block Formatting Context)
+2. **BFC(Block Formatting Context)**
 
 BFC in itself is a big topic, I won't go into details here. 
 
