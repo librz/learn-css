@@ -28,6 +28,8 @@ False. They don't have to be siblings. e.g.
 </div>
 ```
 
+In this example, whitespace between box1 and box2 is 50px instead of 100px
+
 ### True or False: margin collapse can happen either in horizontal or vertical direction
 
 False. margin collapse *only* happens in *vertical* direction. e.g.
@@ -38,6 +40,8 @@ False. margin collapse *only* happens in *vertical* direction. e.g.
   <span style="margin-left: 50px">right</span>
 </div>
 ```
+
+In this example, horizontal whitespace between left span and right span is 100px instead of 50px
 
 ### what are the types of margin collapse?
 
@@ -55,15 +59,15 @@ If a parent and its first or last child have vertical margins, these margins can
 
 ```html
 <div>
-    <div>box 1</div>
+    <div>box1</div>
     <div style="margin-top: 50px">
         <div style="margin-top: 100px"></div>
     </div>
-    <div>box 2</div>
+    <div>box2</div>
 </div>
 ```
 
-In this example, the whitespace between box 1 and box 2 is 100px instead of 150px
+In this example, the whitespace between box1 and box2 is 100px instead of 150px
 
 #### Empty blocks
 
@@ -71,13 +75,13 @@ If a block has no content, its top and bottom margins will collapse. e.g.
 
 ```html
 <div>
-  <div>box 1</div>
+  <div>box1</div>
   <div style="margin-top: 100px; margin-bottom: 50px"></div>
-  <div>box 2</div>
+  <div>box2</div>
 </div>
 ```
 
-In this example, the whitespace between box 1 and box 2 is 100px instead of 150px
+In this example, the whitespace between box1 and box2 is 100px instead of 150px
 
 ### what are the ways to prevent margin collapse?
 
@@ -124,8 +128,10 @@ BFC in itself is a big topic, I won't go into details here.
 There're many ways to create BFC. Below is an example of using `display: flex` to create one:
 
 ```html
-<div class="container" style="display: flex; flex-direction: column;">
-  <div class="box">box1</div>
-  <div class="box">box2</div>
+<div style="display: flex; flex-direction: column;">
+  <div style="margin-bottom: 50px">box1</div>
+  <div style="margin-top: 50px">box2</div>
 </div>
 ```
+
+In this example, the whitespace between box1 and box2 is 100px instead of 50px.
