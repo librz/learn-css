@@ -41,7 +41,7 @@ False. margin collapse *only* happens in *vertical* direction. e.g.
 </div>
 ```
 
-In this example, horizontal whitespace between left span and right span is 100px instead of 50px
+In this example, horizontal whitespace between left span and right span is 100px instead of 50px.
 
 ### what are the types of margin collapse?
 
@@ -135,3 +135,11 @@ There're many ways to create BFC. Below is an example of using `display: flex` t
 ```
 
 In this example, the whitespace between box1 and box2 is 100px instead of 50px.
+
+## Reflection
+
+Margin collapse was introduced to simplify the flow layout(also called normal document flow) by reducing the space between block-level elements. As the web advances, margin collapse causes more confusion than the convenience it brings.
+
+But for compatiability reasons, it's cannot be simply removed.
+
+The solution is to avoid it in modern layouts such as flex and grid. Those layouts create BFC hence no margin collapse.
