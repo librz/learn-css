@@ -1,4 +1,4 @@
-## Concept
+## concept
 
 Normal flow layout is nothing new.
 
@@ -13,7 +13,7 @@ Normal flow layout is the default layout to handle basic formatting requirement.
 
 The difference is whether an element tolerates other elements so that both can live in the same *line*.
 
-## block-level elements
+## block-level
 
 by default, the following tags are block-level elements:
 
@@ -23,7 +23,7 @@ by default, the following tags are block-level elements:
 
 You can set the width/height of block level elements.
 
-## inline-level elements
+## inline-level
 
 by default, the following tags are inline-level elements:
 
