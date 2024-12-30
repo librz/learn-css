@@ -1,4 +1,4 @@
-## test of comprehension
+## Test of comprehension
 
 1. true or false: if two boxes are adjacent but not siblings(children of same container), their margins won't collapse
 2. true or false: margin collapse can happen either in horizontal or vertical direction
@@ -9,13 +9,13 @@ if u can confidently answer the above questions -> you are good -> skip the rest
 
 if not, read on.
 
-## doc
+## Doc
 
 [Mastering Margin Collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing)
 
-## answers
+## Answers
 
-### True or False: if two boxes are adjacent but not siblings(children of same container), their margins won't collapse
+### true or false: if two boxes are adjacent but not siblings(children of same container), their margins won't collapse
 
 False. They don't have to be siblings. e.g.
 
@@ -30,7 +30,7 @@ False. They don't have to be siblings. e.g.
 
 In this example, whitespace between box1 and box2 is 50px instead of 100px
 
-### True or False: margin collapse can happen either in horizontal or vertical direction
+### true or false: margin collapse can happen either in horizontal or vertical direction
 
 False. margin collapse *only* happens in *vertical* direction. e.g.
 
@@ -47,13 +47,13 @@ In this example, horizontal whitespace between left span and right span is 100px
 
 3 types:
 
-#### Adjacent elements
+#### adjacent elements
 
 When two block-level elements are adjacent, their vertical margins collapse into a single margin. The size of the collapsed margin is the largest of the two margins.
 
 This is the most common scenario.
 
-#### Nested elements
+#### nested elements
 
 If a parent and its first or last child have vertical margins, these margins can also collapse. e.g.
 
@@ -69,7 +69,7 @@ If a parent and its first or last child have vertical margins, these margins can
 
 In this example, the whitespace between box1 and box2 is 100px instead of 150px
 
-#### Empty blocks
+#### empty blocks
 
 If a block has no content, its top and bottom margins will collapse. e.g.
 
@@ -121,7 +121,7 @@ or inline content:
 </div>
 ```
 
-#### BFC(Block Formatting Context)
+#### bfc(Block Formatting Context)
 
 BFC in itself is a big topic, I won't go into details here. 
 
