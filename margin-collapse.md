@@ -1,6 +1,6 @@
 ## Test of comprehension
 
-1. true or false: if two boxes are adjacent but not siblings(children of same container), their margins won't collapse
+1. true or false: if two boxes are visually adjacent but not siblings(direct children of same container), their margins won't collapse
 2. true or false: margin collapse can happen either in horizontal or vertical direction
 3. what are the types of margin collapse?
 4. what are the ways to prevent margin collapse?
@@ -15,7 +15,7 @@ if not, read on.
 
 ## Answers
 
-### true or false: if two boxes are adjacent but not siblings(children of same container), their margins won't collapse
+### true or false: if two boxes are visually adjacent but not siblings(direct children of same container), their margins won't collapse
 
 False. They don't have to be siblings. e.g.
 
@@ -55,7 +55,7 @@ This is the most common scenario.
 
 #### nested elements
 
-If a parent and its first or last child have vertical margins, these margins can also collapse. e.g.
+If a parent and its first/last child have vertical margins, these margins can also collapse. e.g.
 
 ```html
 <div>
