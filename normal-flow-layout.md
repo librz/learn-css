@@ -21,7 +21,7 @@ by default, the following tags are block-level elements:
 - specialized tags: `article`, `aside`, `form`, `main`, `header, footer`, `table`, `form`, `h1, ..., h6`, `p`, `nav`, `ul, ol, li`, `blockquote`, `pre`
 - generic tags: `div`, `section`
 
-In normal flow layout, block level elements have margin collapse mechanims. [Here](https://github.com/librz/learn-css/blob/main/margin-collapse.md)'s how it works.
+In normal flow layout, block level elements have **margin collapse** mechanims. [Here](https://github.com/librz/learn-css/blob/main/margin-collapse.md)'s how it works.
 
 ## inline-level
 
@@ -35,7 +35,7 @@ In normal flow layout, inline-level elements have the following attributes:
 1. Setting width/height of an inline element is INVALID. Width and height of the element is decided by its content.
 2. They do NOT respect vertical margin/padding.
  
- There are ways to change this while keeping the element as inline-level. See next section.
+ There are ways to change this while keeping the element inline-level. See next section.
 
 ## display
 
