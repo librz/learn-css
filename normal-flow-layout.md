@@ -11,7 +11,9 @@ Normal flow layout is the default layout to handle basic formatting requirement.
 1. block-level elements
 2. inline-level elements
 
-The difference is whether an element tolerates other elements so that both can live in the same *line*.
+The difference is whether the element tolerates other elements so that both can live in the same *line*.
+
+Block level elements do NOT tolerate this whereas inline level elements do.
 
 ## block-level
 
@@ -21,7 +23,7 @@ by default, the following tags are block-level elements:
 - specialized tags: `article`, `aside`, `form`, `main`, `header, footer`, `table`, `form`, `h1, ..., h6`, `p`, `nav`, `ul, ol, li`, `blockquote`, `pre`
 - generic tags: `div`, `section`
 
-In normal flow layout, block level elements have **margin collapse** mechanims. [Here](https://github.com/librz/learn-css/blob/main/margin-collapse.md)'s how it works.
+In normal flow layout, block level elements have **margin collapse** mechanim. [Here](https://github.com/librz/learn-css/blob/main/margin-collapse.md)'s how it works.
 
 ## inline-level
 
