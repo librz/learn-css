@@ -13,9 +13,9 @@ if not, read on.
 
 [Mastering Margin Collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing)
 
-## Answers
+## Q1 
 
-### true or false: if two boxes are visually adjacent but not siblings(direct children of same container), their margins won't collapse
+> true or false: if two boxes are visually adjacent but not siblings(direct children of same container), their margins won't collapse
 
 False. They don't have to be siblings. e.g.
 
@@ -30,7 +30,9 @@ False. They don't have to be siblings. e.g.
 
 In this example, whitespace between box1 and box2 is 50px instead of 100px
 
-### true or false: margin collapse can happen either in horizontal or vertical direction
+## Q2 
+
+> true or false: margin collapse can happen either in horizontal or vertical direction
 
 False. margin collapse *only* happens in *vertical* direction. e.g.
 
@@ -43,7 +45,9 @@ False. margin collapse *only* happens in *vertical* direction. e.g.
 
 In this example, horizontal whitespace between left span and right span is 100px instead of 50px.
 
-### what are the types of margin collapse?
+## Q3 
+
+> what are the types of margin collapse?
 
 3 types:
 
@@ -83,7 +87,9 @@ If a block has no content, its top and bottom margins will collapse. e.g.
 
 In this example, the whitespace between box1 and box2 is 100px instead of 150px
 
-### what are the ways to prevent margin collapse?
+## Q4
+
+> what are the ways to prevent margin collapse?
 
 #### *something with height* in between
 
@@ -121,7 +127,7 @@ or inline content:
 </div>
 ```
 
-#### bfc(Block Formatting Context)
+#### BFC(Block Formatting Context)
 
 BFC in itself is a big topic, I won't go into details here. 
 
@@ -136,7 +142,7 @@ There're many ways to create BFC. Below is an example of using `display: flex` t
 
 In this example, the whitespace between box1 and box2 is 100px instead of 50px.
 
-## Reflection
+## Thinking
 
 Margin collapse was introduced to simplify the flow layout(also called normal document flow) by reducing the space between block-level elements. As the web advances, margin collapse causes more confusion than the convenience it brings.
 
