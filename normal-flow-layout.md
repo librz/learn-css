@@ -30,7 +30,9 @@ by default, the following tags are inline-level elements:
 - specialized tags: `a`, `abbr`, `img`, `video`, `code`, `input, select, textarea`, `label`, `quote`
 - generic tags: `span`
 
-Setting width/height of an inline element is invalid. Both the width and height of the element is decided by its content. However, you can use `display: inline-block` to set the width/height while keeping the element as an inline element.
+ By default, setting width/height of an inline element is invalid. Width and height of the element is decided by its content.
+ 
+ There are ways to change this while keeping the element as inline-level. See next section.
 
 ## display
 
